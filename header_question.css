@@ -1,0 +1,77 @@
+
+div {
+    display: block;
+}
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+* {
+    
+    box-sizing: border-box;
+}
+#header {
+    text-transform: uppercase;
+    text-align: left;
+    border-bottom: 1px solid #D0D0D0;
+    background-color: #F5F5F5;
+    /* min-height: 99px; */
+    min-height: 80px;
+    /* padding: 18px 0; */
+    padding: 10px 0;
+    box-shadow: 0px 0px 8px 0px rgba(22,26,29,0.33);
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: 100px;;
+}
+#tests-header-logo {
+    background: url(logo.png) no-repeat left center;
+    display: block;
+    text-align: center;
+    width: 220px;
+    max-width: 100%;
+    height: 40px;
+    padding: 0;
+    position: relative;
+}
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+.logo{width:20%;
+margin-left: 100px;}
+.test-name {
+    width: 35%;
+}
+.test-name, 
+.test-name, .clock, .logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.clock {
+    width: 15%;
+    color: #00BCDF;
+    font-size: 1em;
+    text-align: center;
+    line-height: 1.1;
+    width: 12%;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    position: absolute,relative
+}
+.clock span {
+    display: block;
+}
+
+.clock .minutes, .clock .seconds  {
+    display: inline-block;
+    width: 50%;
+    float: left;
+}
+ .logo {
+    display: inline-block;
+    vertical-align: middle;
+   
+}

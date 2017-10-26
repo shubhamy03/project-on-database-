@@ -1,0 +1,81 @@
+#li1,.l1_nav,.l2_nav,.h4_nav{
+    display: inline;
+}
+.header_nav
+{background-color: #02c7ff;
+	width: 100%;
+	height: 53px;
+	color:white;
+	padding: 0px 0px;
+	border-radius: 50px;
+	box-shadow: 5px 5px 10px silver;
+	margin-top: 0px;
+    margin-bottom: 10px;
+}
+.h4_nav{
+        margin-left: 0%;
+}
+.li_nav2{margin-left: 3%;}
+.li_nav3{margin-left: 3%;}
+.li_nav4{margin-left: 3%;}
+.li_nav5{margin-left: 50%;}
+.li_nav6{margin-left: 3%;}
+.li_nav7{margin-left: 3%;}
+
+.li_nav1,.li_nav2,.li_nav3,.li_nav4,.li_nav5,.li_nav6,
+.li_nav7
+{
+	float:left;
+	margin: 4px 5px;
+	height: 30px;
+	padding-top: 13px;
+	padding-bottom: 0px;
+	padding-left: 50px;
+	padding-right: 0px;
+	width:100px;
+	border-radius: 50px;
+	transition: 0.4s;
+}
+.li_nav1,.li_nav2:hover,.li_nav3:hover,.li_nav4:hover,.li_nav5:hover,.li_nav6:hover,
+.li_nav7:hover
+{
+	color:#02c7ff;
+	background-color: white;
+}
+.bt11 a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;	
+    text-decoration: none;
+    display: inline-block;
+	margin-left:25%;
+	margin-top:30%;
+}
+
+
+.bt11 a:hover, a:active {
+background-color: red;}
+
+ input[type=text],input[type=password], select {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+ input[type=submit] {
+    width: 40%;
+    background-color: #f44336;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+ input[type=submit]:hover {
+    background-color: red;
+}

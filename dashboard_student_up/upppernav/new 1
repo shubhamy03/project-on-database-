@@ -1,0 +1,41 @@
+if ($_POST['submit'] == 'Update'){ 
+if(!$_POST['customer_name']) 
+echo 'Enter the name of the customer as it is the primary key.'; 
+else{ 
+$validationFlag = true;
+
+$customer_name = $_POST['customer_name']; 
+$customer_city = $_POST['customer_city']; 
+$customer_street = $_POST['customer_street']; 
+ 
+//$update = "UPDATE customer SET customer_name = '$customer_name'"; 
+
+if($_POST['customer_city']){ 
+$update = "UPDATE customer SET customer_city = '$customer_city' WHERE customer_name = '$customer_name'"; 
+} 
+if($_POST['customer_street']){ 
+$update = "UPDATE customer SET customer_street = '$customer_street' WHERE customer_name = '$customer_name'"; 
+} 
+
+//If all validations are correct, connect to MySQL and execute the query 
+if($validationFlag){ 
+//Connect to mysql server 
+$link = mysql_connect('localhost', '2015257', 'sumit@1506'); 
+//Check link to the mysql server 
+if(!$link){ 
+die('Failed to connect to server: ' . mysql_error()); 
+} 
+//Select database 
+$db = mysql_select_db('2015257'); 
+if(!$db){ 
+die("Unable to select database"); 
+} 
+//Execute query 
+$results = mysql_query($update); 
+if($results == FALSE) 
+echo mysql_error() . '<br>'; 
+else 
+echo mysql_info(); 
+} 
+} 
+} 
